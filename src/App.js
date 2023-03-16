@@ -114,7 +114,7 @@ function App() {
                 />{" "}
                 {el.away}
                 <ButtonGame onClick={() => handleToggleEdit(el.id)}>
-                  Edit
+                  {!el.editable ? "Edit" : "Lock"}
                 </ButtonGame>
                 <ButtonGame onClick={() => handleFinish(el.id)}>
                   Finish
